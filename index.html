@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UFT-8">
+	<title>Apple</title>
+	 <link rel="stylesheet" href="css/icons.css">
+<body>
+	<!-- PREMIUM FEATURES BUTTON -->
+  	<a target="_blank" class="hide-s" href="../template/eleganter-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="img/premium-features.png" alt=""></a>
+  	 <header> 
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a href="#"><i class="fa fa-apple"></i></a></li>
+				<li><a href="#" class="menu-item">Mac</a></li>
+				<li><a href="#" class="menu-item">iPad</a></li>
+				<li><a href="#" class="menu-item">iPhone</a></li>
+				<li><a href="#" class="menu-item">Watch</a></li>
+				<li><a href="#" class="menu-item">TV</a></li>
+				<li><a href="#" class="menu-item">Music</a></li>
+				<li><a href="#" class="menu-item">Support</a></li>
+				<li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+				<li><a href="#"><i class="fa fa-shopping-basket"></i></a></li>
+			</ul>
+			<div class="search-form">
+				<form>
+					<input type="text" name="" placeholder="Search apple.com">
+				</form>
+			</div>
+			<a class="close"><i class="fa fa-times"></i></a>
+		</div>
+	</nav> 
+	 <img src="img/header.jpg" alt="">                 
+      </header>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('#search').click(function(){
+  			$('.menu-item').addClass('hide-item')
+  			$('.search-form').addClass('active')
+  			$('.close').addClass('active')
+  			$('#search').hide()
+  		})
+
+  		$('.close').click(function(){
+  			$('.menu-item').removeClass('hide-item')
+  			$('.search-form').removeClass('active')
+  			$('.close').removeClass('active')
+  			$('#search').show()
+  		})
+  	})
+  </script>
+
+</body>
+</html>
